@@ -52,7 +52,7 @@ You can shift this. Keep your website and Google profile updated, with clear pho
 
 ## 4. Voice note
 
-Voice note: LINK_TO_ADD (Google Drive, shared as anyone with the link can view).
+Voice note: https://drive.google.com/file/d/12upLhdww89Ee83VMnUqMbm-SLalvm_NN/view?usp=sharing (Google Drive, shared as anyone with the link can view).
 
 ## 5. Scaling this up
 
