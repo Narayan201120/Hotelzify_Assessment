@@ -1,0 +1,14 @@
+id,check_in,channel,amount,status
+B1001,12/10/2026,Booking.com,120,confirmed
+B1002,2026-10-13,booking com,95,cancelled
+B1003,Oct 14 2026,Direct,110,confirmed
+B1003,Oct 14 2026,Direct,110,confirmed
+B1004,15-10-2026,BDC,140,confirmed
+B1005,2026-10-18,Expedia,200,confirmed
+B1006,18/10/2026,expedia,180,cancelled
+B1007,2026-11-02,Direct,130,confirmed
+B1008,02/11/2026,Booking.com,150,confirmed
+B1008,02/11/2026,Booking.com,150,confirmed
+B1009,Nov 05 2026,EXPEDIA,175,confirmed
+B1010,2026-11-07,Direct,90,cancelled
+B1011,07-11-2026,bdc,160,confirmed
