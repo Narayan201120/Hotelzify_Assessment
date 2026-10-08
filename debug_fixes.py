@@ -2,33 +2,14 @@
 
 
 def last_n_days_revenue(daily, n):
-    """Sum revenue of the last n days.
-
-    Bug in original: daily[-n:-1] drops the most recent day.
-    Python slices exclude the stop index, so [:-1] stops one
-    element early. It also breaks when n <= 0.
-
-    Fix: use daily[-n:] and guard bad n. Oversized n needs no
-    special case: daily[-n:] already returns the whole list.
-    """
+    """Sum the last n days. Fix: daily[-n:-1] dropped the newest day, now daily[-n:]."""
     if n <= 0:
         return 0
     return sum(daily[-n:])
 
 
 def cancellation_rate(bookings):
-    """Return cancelled / total as a float in [0, 1].
-
-    Bug in original: len(bookings) == 0 raises ZeroDivisionError.
-    It also misses "Cancelled" vs "cancelled", the US spelling
-    "canceled", and rows without a status key.
-
-    Fix: return 0.0 for empty input, match any status starting
-    with "cancel" after strip/lower, and use .get().
-
-    Note: this counts list entries, it does not dedupe booking
-    ids. Dedupe before calling if the input can hold duplicates.
-    """
+    """Cancelled share in [0, 1]. Fix: empty list returns 0.0, matches cancel* case-insensitively. Does not dedupe ids."""
     if not bookings:
         return 0.0
     cancelled = len(
